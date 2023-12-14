@@ -19,7 +19,13 @@ jobs:
     steps:
       - name: Read a variable
         run: echo "My APP_ID value in the production job is $APP_ID"
+
+      - name: Read second variable
+        run: echo "My CHEF_ID value in the production job is $CHEF_ID"
      
       - name: Tell me a secret!
         run: echo "My existing secret is ${{ secrets.SECRET }}"
+
+      - name: Tell me second secret!
+        run: echo "My existing secret is ${{ secrets.SECRET2 }}"
 
