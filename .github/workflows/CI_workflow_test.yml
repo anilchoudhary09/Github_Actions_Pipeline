@@ -23,5 +23,5 @@ jobs:
         run: echo "My APP_ID value in the production job is $APP_ID"
      
       - name: Tell me a secret!
-        run: echo "My existing secret is ${{ secrets.SECRET }}" 
+        run: echo "My existing secret is ${{ secrets.SECRET }}"
 
